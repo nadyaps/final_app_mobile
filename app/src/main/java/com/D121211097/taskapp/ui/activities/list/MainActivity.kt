@@ -82,8 +82,8 @@ class MainActivity : ComponentActivity() {
         if (food != null) {
         Box(
             modifier = Modifier
-                .padding(30.dp)
-                .shadow(2.dp, shape = RoundedCornerShape(3.dp))
+                .padding(40.dp)
+                .shadow(3.dp, shape = RoundedCornerShape(3.dp))
                 .clickable {
                     val intent = Intent(this, DetailActivity::class.java)
                     intent.putExtra("Food", food)
@@ -93,7 +93,7 @@ class MainActivity : ComponentActivity() {
             Column(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .padding(8.dp)
+                    .padding(18.dp)
             ){
 
                 //Food Photo
